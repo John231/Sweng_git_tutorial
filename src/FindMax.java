@@ -4,14 +4,17 @@
  *	Basic test class for github tutorial
  *	To find the maximum number in an Integer array
  */
-public class FindMax {
+public class FindMax 
+{
 
 	// maxValue method which returns max value of an array
-	public static int maxValue (int[] x){
+	public static int maxValue (int[] x)
+	{
 
 		int max = x[0];
 
-		for(int i=1; i < x.length; i++){
+		for(int i=1; i < x.length; i++)
+		{
 			if(x[i] > max){
 				max = x[i];
 			}
@@ -19,7 +22,8 @@ public class FindMax {
 		return max;
 	}
 
-	public static void main (String[] args){
+	public static void main (String[] args)
+	{
 		
 		// Declaring array 
 		int[] x = {8, 4, 12, 90, 5, 6, 19, 25};

@@ -7,8 +7,13 @@ public class InterestCalculator {
 	
 		public static void main(String[] arguments){
 			
-			int investment = 9_000;
-			System.out.println("Investment amount is: "+investment);
+			int investment = 0;
+			
+			if(arguments.length > 0)
+				investment = Integer.parseInt(arguments[0]);
+			
+			
+			System.out.println("Investment amount is: "+ investment);
 			//Calculate the worth after a year of with interest at 6%
 			investment *= 1.06;
 			//Calculate the worth after a year with interest at 8%
